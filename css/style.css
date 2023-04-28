@@ -174,7 +174,7 @@ main{
 
 @media (max-width: 1200px){
     .cabecalho{
-        width: 100%;
+        width: 102.5%;
         font-size: 10px;
     }
     .nav-bar-esquerda{
@@ -183,10 +183,10 @@ main{
         font-size: 10px;
         padding: 0px;
         align-items: center;
-        width: 100%;
+        width: 102.5%;
     }
     .footer{
-        width: 100%;
+        width: 102.5%;
         display: flex;
         justify-content: space-around;
         margin-top: 8em;
