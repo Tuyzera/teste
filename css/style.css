@@ -188,6 +188,23 @@ main{
     .gallery{
         display: flex;
         flex-direction: column;
+        gap: 0px;
+        padding-left: 100px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .gallery-card{
+        text-align: center;
+        cursor: pointer;
+        text-align: center;
+    
+        
+    }
+    .gallery-title{
+        text-align: center;
+    }
+    .gallery-card img{
+        width: 150px;
     }
     .footer{
         width: 102.5%;
