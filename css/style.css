@@ -1,0 +1,195 @@
+:root{
+    --slate-50:#F1F6FB;
+    --slate-60:#F6F8FB;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html, body{
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    overflow: hidden;
+
+    max-height: 100vh;
+    width: 100%;
+}
+
+
+.cabecalho-conteudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(17, 80, 134);
+    font-style: unset;  
+    align-items: center;
+    padding: 1rem 3rem;
+}
+#titulos{
+    text-decoration: none;
+    color: var(--slate-50);
+    letter-spacing: 0.05rem;
+    
+}
+#titulos:hover{
+    text-decoration: underline;
+    color: var(--slate-50);
+    font-size: 1rem;
+    
+}
+#perfil{
+    margin-right: 2%;
+}
+#inicio{
+    margin-left: 2%;
+}
+.nav-bar-esquerda{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100%;
+    width: 20%;
+    float: left;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+}
+.nav-bar-esquerda li{
+    display: flex;
+    align-items: center;
+}
+/* ENTENDER COMO FOI FEITO !! Daqui pra baixo */
+.sectionItem{
+    width: 100%;
+    padding: 1rem;
+    display: block;
+    cursor: pointer;
+    
+}
+.sectionItem-Painel{
+    width: 100%;
+    padding: 1rem;
+    display: block;
+    cursor: pointer;
+    background-color: var(--slate-50);
+    
+}
+.sectionItem-Painel a{
+    color: #84909B;
+    text-decoration: none;
+}
+
+.sectionItem:hover{
+    background-color: var(--slate-50);
+    letter-spacing: 0.05rem;
+}
+
+.sectionTitle{
+    display: flex;
+    align-items: center;
+    color: #84909B;
+    gap: 0.5rem;
+    width: 100%;
+    letter-spacing: 0.05rem;
+}
+
+
+.recentItems{
+    display: none;    
+}
+
+  .recentItems a{
+    height: 6.25rem;
+  }
+
+  .sectionTitle:hover + .recentItems {
+    display: block;
+    padding: inherit;
+    letter-spacing: 0.05rem;
+    
+  }
+  .sectionItem a{
+    color: #84909B;
+    text-decoration: none;
+    
+  }
+  
+  .recentItems:hover{
+    display: block;
+    padding: inherit;
+    
+  }
+  .recentItems a{
+    border-bottom: 0,0625rem solid black;
+  }
+
+  .footer{
+    background-color: rgb(17, 80, 134);
+    padding: 1.25rem;
+   
+  }
+
+.footer p{
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    width: 20%;
+    color: var(--slate-50);
+    text-decoration: underline;
+    letter-spacing: 0.1rem;
+  }
+
+main{
+    background-color: #F1F4F5;
+    width: 80%;
+    margin-left: 20%;
+    padding-bottom: 6.5%;
+  }
+
+.gallery {
+    color: #84909B;
+    padding: 9.375rem   6.25rem 6rem 6.25rem;
+    text-align: center;
+    overflow: auto;
+    gap: 0.625rem;
+   
+}
+.gallery-card{
+    width: 31%;
+    float: left;
+    text-align: center;
+    margin-left: 1.25rem;
+    cursor: pointer;
+}
+.gallery-title{
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@media (max-width: 1200px){
+    .cabecalho{
+        width: 83%;
+        font-size: 10px;
+    }
+    .nav-bar-esquerda{
+        display: flex;
+        flex-direction: row;
+        font-size: 10px;
+        padding: 0px;
+        align-items: center;
+    }
+    .footer{
+        width: 83%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 8em;
+        font-size: 10px;
+    }
+    
+}

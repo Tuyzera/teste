@@ -1,0 +1,129 @@
+:root{
+    --slate-50:#F1F6FB;
+    --slate-60:#F6F8FB;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html, body{
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    overflow: hidden;
+
+    max-height: 100vh;
+    width: 100%;
+}
+
+
+.cabecalho-conteudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(17, 80, 134);
+    font-style: unset;  
+    align-items: center;
+    padding: 1rem 0px;
+}
+#titulos{
+    text-decoration: none;
+    color: var(--slate-50);
+    letter-spacing: 0.05rem;
+    
+}
+#titulos:hover{
+    text-decoration: underline;
+    color: var(--slate-50);
+    font-size: 1rem;
+    
+}
+#perfil{
+    margin-right: 2%;
+}
+#inicio{
+    margin-left: 2%;
+}
+.cabecalho-conteudo-recentes-menu{
+    display: none;
+    position: fixed;
+    left:0;
+    width:100%;
+    
+
+}
+.cabecalho-conteudo-recentes, .nav-bar-esquerda li{
+    list-style: none;
+
+}
+.cabecalho-conteudo > li:hover .cabecalho-conteudo-recentes-menu{
+    background-color: rgb(63, 86, 148);
+    border: 1px solid black;
+    padding: 0.3125rem 1.875rem 0px 0.625rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.125rem;
+    list-style: none;
+    text-align: left;
+    color: white;
+    letter-spacing: 0.05rem;
+    
+    
+
+}
+
+.cabecalho-conteudo .cabecalho-conteudo-recentes-menu a:hover{
+    text-decoration: underline;
+   
+}
+.cabecalho-conteudo-recentes a{
+    color: white;
+    padding: 0.625rem 0.625rem;
+}
+.cabecalho-conteudo-recentes-menu a:hover{
+    cursor: pointer;
+    border-bottom: 0.0625rem solid white;   
+}
+.login{
+    display: flex;
+    justify-content: center;
+    color: slategray;
+    letter-spacing: 0.05rem;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.input{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.botao-entrar{
+    width: 1000px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+.footer{
+    background-color: rgb(17, 80, 134);
+    padding: 1.25rem;
+   
+  }
+
+  .footer p{
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    width: 20%;
+    color: var(--slate-50);
+    text-decoration: underline;
+    letter-spacing: 0.1rem;
+  }
+
+  
