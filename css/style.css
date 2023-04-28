@@ -185,6 +185,10 @@ main{
         align-items: center;
         width: 102.5%;
     }
+    .gallery{
+        display: flex;
+        flex-direction: column;
+    }
     .footer{
         width: 102.5%;
         display: flex;
