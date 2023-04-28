@@ -22,11 +22,11 @@ body{
 .cabecalho-conteudo{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: rgb(17, 80, 134);
     font-style: unset;  
     align-items: center;
-    padding: 1rem 0px;
+    padding: 1rem 3rem;
 }
 #titulos{
     text-decoration: none;
@@ -46,48 +46,6 @@ body{
 #inicio{
     margin-left: 2%;
 }
-.cabecalho-conteudo-recentes-menu{
-    display: none;
-    position: fixed;
-    left:0;
-    width:100%;
-    
-
-}
-.cabecalho-conteudo-recentes, .nav-bar-esquerda li{
-    list-style: none;
-
-}
-.cabecalho-conteudo > li:hover .cabecalho-conteudo-recentes-menu{
-    background-color: rgb(63, 86, 148);
-    border: 1px solid black;
-    padding: 0.3125rem 1.875rem 0px 0.625rem;
-    display: flex;
-    flex-direction: column;
-    margin-top: 0.125rem;
-    list-style: none;
-    text-align: left;
-    color: white;
-    letter-spacing: 0.05rem;
-    
-    
-
-}
-
-.cabecalho-conteudo .cabecalho-conteudo-recentes-menu a:hover{
-    text-decoration: underline;
-   
-}
-.cabecalho-conteudo-recentes a{
-    color: white;
-    padding: 0.625rem 0.625rem;
-}
-.cabecalho-conteudo-recentes-menu a:hover{
-    cursor: pointer;
-    border-bottom: 0.0625rem solid white;
-    
-    
-}
 .nav-bar-esquerda{
     display: flex;
     flex-direction: column;
@@ -95,9 +53,11 @@ body{
     width: 20%;
     float: left;
 }
-
-
-
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+}
 .nav-bar-esquerda li{
     display: flex;
     align-items: center;
@@ -173,7 +133,7 @@ body{
    
   }
 
-  .footer p{
+.footer p{
     display: inline-block;
     text-align: center;
     align-items: center;
@@ -183,20 +143,19 @@ body{
     letter-spacing: 0.1rem;
   }
 
-  main{
+main{
     background-color: #F1F4F5;
     width: 80%;
     margin-left: 20%;
     padding-bottom: 6.5%;
   }
 
-  .gallery {
+.gallery {
     color: #84909B;
-    padding: 9.375rem   6.25rem 3.125rem 6.25rem;
+    padding: 9.375rem   6.25rem 6rem 6.25rem;
     text-align: center;
     overflow: auto;
     gap: 0.625rem;
-   
    
 }
 .gallery-card{
@@ -211,4 +170,26 @@ body{
     letter-spacing: 0.25rem;
     font-size: 1rem;
     font-weight: bold;
+}
+
+@media (max-width: 1200px){
+    .cabecalho{
+        width: 100%;
+        font-size: 10px;
+    }
+    .nav-bar-esquerda{
+        display: flex;
+        flex-direction: row;
+        font-size: 10px;
+        padding: 0px;
+        align-items: center;
+    }
+    .footer{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 8em;
+        font-size: 10px;
+    }
+    
 }
