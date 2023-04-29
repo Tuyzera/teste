@@ -198,6 +198,7 @@ main{
         overflow: hidden;
         width: 100vw;
         justify-content: center;
+        padding-top: 5vh;
     }
     .gallery-card img{
         width: 150px;
