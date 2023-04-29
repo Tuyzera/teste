@@ -194,12 +194,12 @@ main{
         display: flex;
         flex-direction: column;
         padding: 5.5rem  11rem 6rem 6.25rem;
-        height: 60vh;
+        height: 80vh;
         align-items: center;
         overflow: hidden;
     }
     .gallery-card img{
-        width: 150px;
+        width: 100px;
     }
     .footer{
         width: 100vw;
