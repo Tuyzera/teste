@@ -193,9 +193,10 @@ main{
     .gallery{
         display: flex;
         flex-direction: column;
-        padding: 5rem  10rem 6rem 6.25rem;
+        padding: 6.5rem  11rem 6rem 6.25rem;
         height: 80vh;
         align-items: center;
+        overflow: hidden;
     }
     .gallery-card img{
         width: 150px;
@@ -205,6 +206,7 @@ main{
         display: flex;
         justify-content: space-around;
         font-size: 10px;
+        padding: 1.5vh;
     }
     main{
         margin-left: 0px;
