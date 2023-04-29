@@ -15,7 +15,7 @@ body{
     overflow: hidden;
 
     max-height: 100vh;
-    width: 100%;
+    width: 100vw;
 }
 
 
@@ -41,22 +41,21 @@ body{
     
 }
 #perfil{
-    margin-right: 2%;
+    margin-right: 2vw;
 }
 #inicio{
-    margin-left: 2%;
+    margin-left: 2vw;
 }
 .nav-bar-esquerda{
     display: flex;
-    flex-direction: column;
-    padding-bottom: 100%;
-    width: 20%;
+    flex-direction: column; 
+    width: 20vw;
     float: left;
 }
 .nav-right{
     display: flex;
     align-items: center;
-    gap: 1.1rem;
+    gap: 1.1vw;
 }
 .nav-bar-esquerda li{
     display: flex;
@@ -64,16 +63,15 @@ body{
 }
 /* ENTENDER COMO FOI FEITO !! Daqui pra baixo */
 .sectionItem{
-    width: 100%;
+    width: 20vw;
     padding: 1rem;
     display: block;
     cursor: pointer;
     
 }
 .sectionItem-Painel{
-    width: 100%;
+    width: 100vw;
     padding: 1rem;
-    display: block;
     cursor: pointer;
     background-color: var(--slate-50);
     
@@ -93,7 +91,6 @@ body{
     align-items: center;
     color: #84909B;
     gap: 0.5rem;
-    width: 100%;
     letter-spacing: 0.05rem;
 }
 
@@ -130,6 +127,10 @@ body{
   .footer{
     background-color: rgb(17, 80, 134);
     padding: 1.25rem;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
    
   }
 
@@ -137,7 +138,7 @@ body{
     display: inline-block;
     text-align: center;
     align-items: center;
-    width: 20%;
+    width: 20vw;
     color: var(--slate-50);
     text-decoration: underline;
     letter-spacing: 0.1rem;
@@ -145,9 +146,8 @@ body{
 
 main{
     background-color: #F1F4F5;
-    width: 80%;
+    width: 80vw;
     margin-left: 20%;
-    padding-bottom: 6.5%;
   }
 
 .gallery {
@@ -156,10 +156,11 @@ main{
     text-align: center;
     overflow: auto;
     gap: 0.625rem;
+    height: 85vh;
    
 }
 .gallery-card{
-    width: 31%;
+    width: 20vw;
     float: left;
     text-align: center;
     margin-left: 1.25rem;
@@ -174,47 +175,48 @@ main{
 
 @media (max-width: 1200px){
     .cabecalho{
-        width: 102.5%;
+        width: 100vw;
         font-size: 10px;
+    }
+    .cabecalho-conteudo{
+        width: 100vw;
     }
     .nav-bar-esquerda{
         display: flex;
         flex-direction: row;
         font-size: 10px;
-        padding: 0px;
         align-items: center;
-        width: 102.5%;
+        width: 100vw;
+        gap: 25px;   
+        border-bottom: 1px solid  rgb(17, 80, 134);
     }
     .gallery{
         display: flex;
         flex-direction: column;
-        gap: 0px;
-        padding-left: 100px;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-    .gallery-card{
-        text-align: center;
-        cursor: pointer;
-        text-align: center;
-    
-        
-    }
-    .gallery-title{
-        text-align: center;
+        padding: 5rem  10rem 6rem 6.25rem;
+        height: 80vh;
+        align-items: center;
     }
     .gallery-card img{
         width: 150px;
     }
     .footer{
-        width: 102.5%;
+        width: 100vw;
         display: flex;
         justify-content: space-around;
         font-size: 10px;
     }
     main{
         margin-left: 0px;
-        width: 102.5%;
+        width: 100vw;
     }
+    .sectionItem-Painel{
+        width: 20vw;
+        padding: 1rem;
+        cursor: pointer;
+        background-color: var(--slate-50);
+        
+    }
+
     
 }
