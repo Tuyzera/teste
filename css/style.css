@@ -127,7 +127,7 @@ body{
   .footer{
     background-color: rgb(17, 80, 134);
     padding: 1.25rem;
-    position: relative;
+    position: absolute;
     bottom: 0;
     width: 100vw;
     text-align: center;
