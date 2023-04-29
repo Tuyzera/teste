@@ -194,7 +194,7 @@ main{
         display: flex;
         flex-direction: column;
         padding: 5.5rem  11rem 6rem 6.25rem;
-        height: 80vh;
+        height: 60vh;
         align-items: center;
         overflow: hidden;
     }
