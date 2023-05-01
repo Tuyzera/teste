@@ -178,6 +178,28 @@ select {
 div input:hover, select:hover {
     background-color: lightgray;
 }
+@media (max-width: 1200px){
+    .cabecalho{
+        width: 100vw;
+        font-size: 10px;
+    }
+    .cabecalho-conteudo{
+        width: 100vw;
+    }
 
+    .footer{
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        font-size: 10px;
+        padding: 1.5vh;
+    }
+    main{
+        margin-left: 0px;
+        width: 100vw;
+    }
+
+    
+}
 
   
