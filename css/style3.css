@@ -252,6 +252,9 @@ main{
         background-color: var(--slate-50);
         
     }
+    .login{
+        width: 45vw;
+    }
 
 
 }
