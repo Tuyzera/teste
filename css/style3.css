@@ -145,9 +145,10 @@ body{
   }
 
 main{
-    background-color: #F1F4F5;
+    background-color: #F1F6FB;
     width: 80vw;
     margin-left: 20%;
+    height: 100vh;
   }
 
 .gallery {
@@ -171,6 +172,34 @@ main{
     letter-spacing: 0.25rem;
     font-size: 1rem;
     font-weight: bold;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    background-color: #F1F6FB;
+    margin-top: 5vh;
+    width: 20vw;
+    justify-content: center;
+    margin-left: 30vw;
+}
+.login h1{
+    text-align: center;
+    margin-top: 15vh;
+}
+
+#nome, #senha{
+    padding: 5px;
+    border-radius: 20px;
+}
+#senha{
+    margin-top: 2px;
+}
+.botoes{
+    display: flex;  
+    justify-content: center;
+    padding: 5px;  
+    margin-top: 2px;
+    border-radius: 20px;
 }
 
 @media (max-width: 1200px){
@@ -214,6 +243,7 @@ main{
     main{
         margin-left: 0px;
         width: 100vw;
+        
     }
     .sectionItem-Painel{
         width: 20vw;

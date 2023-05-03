@@ -1,3 +1,6 @@
+var arr = [];
+
+
 function layoutCustom(){
     document.getElementById('div1').style.backgroundColor = 'red';
     document.getElementById('body1').style.backgroundColor = 'green';
@@ -9,3 +12,10 @@ function layoutNormal(){
     document.getElementById('body1').style.backgroundColor = 'white';
     document.getElementById('div1').style.fontFamily = 'Verdana', 'Geneva', Tahoma, sans-serif;
 }
+
+function addItem(){
+    const usuario = document.getElementById('usuario')
+    const nome = document.getElementById('nome').value;
+    usuario.innerHTML = nome;
+ }
+

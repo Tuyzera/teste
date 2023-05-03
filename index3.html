@@ -1,29 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <script src="https://kit.fontawesome.com/c7ea27d389.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style3.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-</head>
 
+
+</head>
 <body>
     <header class="cabecalho">
         <nav class="cabecalho-conteudo">
          <a href="index.html"><i class="fa-solid fa-graduation-cap fa-lg" style="color: #ffffff;"></i></a>   
             <div class="nav-right">
                 <a href="#" id="titulos">
-                    <p>Usuário não Autenticado</p>
+                    <p id="usuario">Usuário não Autenticado</p>
                 </a>
                 <i class="fa-solid fa-user fa-shake fa-lg" style="color: #ffffff;" id="imagem"></i>
-                
             </div>
         </nav>
     </header>
@@ -68,25 +64,28 @@
         </div>
     </aside>
     <main>
-        <section class="gallery">
-                <div class="gallery-card">
-                    <img src="https://institutoreacao.org.br/wp-content/uploads/2020/12/Voce-sabe-quais-sao-os-desafios-que-as-criancas-brasileiras-terao-pela-frente-Entenda-como-podemos-reverter-essa-situacao..jpg" alt="" width="100%">
-                    <p class="gallery-title">Sobre Nós </p>
-                </div>
-                <div class="gallery-card">
-                    <img src="https://www.crodapharma.com/mediaassets/images/health-care/health-care-new-website/who-we-are/shutterstock-654406453.jpg?w=1920&la=pt-BR&focalpointcrop=1&xratio=0&yratio=0&hash=1B66EFBF1EE13F256FE1CD9B00C4CF9A" alt="" width="100%">
-                    <p class="gallery-title">Entre em Contato</p>
-                </div>
-                <div class="gallery-card">
-                    <img src="https://media.diariolasamericas.com/p/f65a8513f3228af204ab8b893d3c7956/adjuntos/216/imagenes/000/148/0000148825/la-importancia-la-educacion-adultos.jpg" alt=""width="100%">
-                    <p class="gallery-title">Trabalhe conosco</p>
-                </div>
-            </section>
+        <div class="login">
+            <h1>Login</h1>
+                <input id="nome"
+                required = "required"
+                type="text"
+                placeholder="Digite seu nome.">
+        
+                <input id = "senha"
+                required = "required"
+                type = "password"
+                placeholder="Digite a sua senha.">
+                
+                <button type="submit" class="botoes" onsubmit="false" onclick="addItem()">Entrar</button>
+        </div>
+     
     </main>
     <footer class="footer">
-            <p>Arthur Utpadel</p>
-            <p>Kevin Schops Cavalheiro</p>
-            <p>Matheus Voltolini Seidel</p>
-    </footer>
+        <p>Arthur Utpadel</p>
+        <p>Kevin Schops Cavalheiro</p>
+        <p>Matheus Voltolini Seidel</p>
+</footer>
+   
+ 
 </body>
 </html>

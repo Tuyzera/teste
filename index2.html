@@ -16,7 +16,7 @@
                 <a href="index2.html" id="titulos">
                     <p>Login</p>
                 </a>
-                <i class="fa-solid fa-user fa-shake fa-lg" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-user fa-shake fa-lg" style="color: #ffffff;" id="imagem"></i>
             </div>  
         </nav>
     </header>
@@ -28,7 +28,7 @@
             <input type="text" name="nome" id="nome"> <br>
     
             <label for="idade">Idade </label>
-            <input type="date" name="idade" id="idade"><br>
+            <input type="number" name="idade" id="idade"><br>
     
             <label for="sexo">Sexo</label>
             <select name="sexo" id="sexo">
@@ -49,7 +49,7 @@
             <label for="semestre">Semestre</label>
             <input type="number" name="semestre" id="semestre" max="14" min="1"><br>
 
-            <button >Enviar</button><br>
+            <input type="submit" value="Entrar" onclick="trocarImagem()">
             <p>
                 <label for="Normal">Normal</label>
                 <input type="radio" name="curso" id="Normal" value="Normal" onclick="layoutNormal()"> 
