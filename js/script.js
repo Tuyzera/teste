@@ -1,11 +1,4 @@
-const usuarios = JSON.parse(localStorage.getItem("json")) || [];
 
-console.log(usuarios)
-
-
-usuarios.forEach((elemento) =>{
-    console.log(elemento)
-})
 
 function layoutCustom(){
     document.getElementById('div1').style.backgroundColor = 'red';
@@ -20,6 +13,8 @@ function layoutNormal(){
 }
 
     function addItem(){
+        const login = document.getElementsByClassName('login')
+        const novoItem = document.createElement('p')
         /* Cria um objeto JavaScript contendo os dados que deseja armazenar. */
         const json = {
            nome: document.getElementById('nome').value,
@@ -33,13 +28,16 @@ function layoutNormal(){
      
         /* Use a função localStorage.setItem() para armazenar a string JSON em uma chave específica do LocalStorage. */
         localStorage.setItem('json', userJson);
-     
 
+        alert('Logado com Sucesso!')
+
+        window.location.href = 'index.html';
+     
      }
 
      function criaElemento(json){
         const usuario = document.getElementById('usuario')
-       usuario.innerHTML = json.nome;
+        usuario.innerHTML = json.nome;
 
         
     }
