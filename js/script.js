@@ -2,13 +2,11 @@
 
 function layoutCustom(){
     document.getElementById('div1').style.backgroundColor = 'red';
-    document.getElementById('body1').style.backgroundColor = 'green';
     document.getElementById('div1').style.fontFamily = 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 function layoutNormal(){
-    document.getElementById('div1').style.background = 'white';
-    document.getElementById('body1').style.backgroundColor = 'white';
+    document.getElementById('div1').style.background = 'rgb(241,246,251)';
     document.getElementById('div1').style.fontFamily = 'Verdana', 'Geneva', Tahoma, sans-serif;
 }
 
