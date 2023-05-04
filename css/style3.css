@@ -151,28 +151,7 @@ main{
     height: 100vh;
   }
 
-.gallery {
-    color: #84909B;
-    padding: 9.375rem   6.25rem 6rem 6.25rem;
-    text-align: center;
-    overflow: auto;
-    gap: 0.625rem;
-    height: 85vh;
-   
-}
-.gallery-card{
-    width: 20vw;
-    float: left;
-    text-align: center;
-    margin-left: 1.25rem;
-    cursor: pointer;
-}
-.gallery-title{
-    text-transform: uppercase;
-    letter-spacing: 0.25rem;
-    font-size: 1rem;
-    font-weight: bold;
-}
+
 .login{
     display: flex;
     flex-direction: column;

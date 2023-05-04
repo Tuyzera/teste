@@ -1,14 +1,12 @@
 
-
-const usuarios = document.getElementById('usuarios')
+const usuarios = document.getElementById('usuario')
 console.log(usuarios)
 
 const json = JSON.parse(localStorage.getItem('json'));
 console.log(json.nome)
 
 if (json != null) {
-    console.log(json.nome)
-    alert("entrou")
+    usuarios.innerHTML = json.nome;
 } else {
     usuarios.innerHTML = 'Usuário não autenticado';
 }

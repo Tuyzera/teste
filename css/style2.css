@@ -61,6 +61,68 @@ body{
     display: flex;
     align-items: center;
 }
+.sectionItem{
+    width: 20vw;
+    padding: 1rem;
+    display: block;
+    cursor: pointer;
+    
+}
+.sectionItem-Painel{
+    width: 100vw;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: var(--slate-50);
+    
+}
+.sectionItem-Painel a{
+    color: #84909B;
+    text-decoration: none;
+}
+
+.sectionItem:hover{
+    background-color: var(--slate-50);
+    letter-spacing: 0.05rem;
+}
+
+.sectionTitle{
+    display: flex;
+    align-items: center;
+    color: #84909B;
+    gap: 0.5rem;
+    letter-spacing: 0.05rem;
+}
+
+
+.recentItems{
+    display: none;    
+}
+
+  .recentItems a{
+    height: 6.25rem;
+  }
+
+  .sectionTitle:hover + .recentItems {
+    display: block;
+    padding: inherit;
+    letter-spacing: 0.05rem;
+    
+  }
+  .sectionItem a{
+    color: #84909B;
+    text-decoration: none;
+    
+  }
+  
+  .recentItems:hover{
+    display: block;
+    padding: inherit;
+    
+  }
+  .recentItems a{
+    border-bottom: 0,0625rem solid black;
+  }
+
 .cabecalho-conteudo-recentes-menu{
     display: none;
     position: fixed;
@@ -84,15 +146,23 @@ body{
     text-align: left;
     color: white;
     letter-spacing: 0.05rem;
-    
-    
-
 }
 #div1{
     display: flex;
     justify-content: center;
-    margin-top: 25vh;
-    margin-bottom: 25vh;
+    width: 30%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 8vh;
+}
+#div1 input{
+    border: 1px solid black;
+    border-radius: 20px;
+}
+form{
+   padding-top: 30px;
 }
 
 
@@ -151,33 +221,12 @@ body{
     text-decoration: underline;
     letter-spacing: 0.1rem;
   }
-div label {
-    padding: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    
-}
-
-input{
-
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-label[for="sexo"]{
-    padding-right: 22px;
-}
-
-input[type="text"],[type="number"], [type = "date"]{
-    border-radius: 25px;
-    border-bottom-width: 1px;
-}
-select {
-    border-radius: 25px;
-    border-bottom-width: 1px;
-}
-div input:hover, select:hover {
-    background-color: lightgray;
-}
+  main{
+    width: 80vw;
+    margin-left: 20vw;
+    height: 100vh;
+    background-color: rgb(241,246,251);
+  }
 @media (max-width: 1200px){
     .cabecalho{
         width: 100vw;
@@ -186,7 +235,29 @@ div input:hover, select:hover {
     .cabecalho-conteudo{
         width: 100vw;
     }
-
+    .nav-bar-esquerda{
+        display: flex;
+        flex-direction: row;
+        font-size: 10px;
+        align-items: center;
+        width: 100vw;
+        gap: 25px;   
+        border-bottom: 1px solid  rgb(17, 80, 134);
+    }
+    .gallery{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        height: 80vh;
+        overflow: hidden;
+        width: 100vw;
+        justify-content: center;
+        padding-top: 1vh;
+        padding-left: 33vw;
+    }
+    .gallery-card img{
+        width: 100px;
+    }
     .footer{
         width: 100vw;
         display: flex;
@@ -197,9 +268,19 @@ div input:hover, select:hover {
     main{
         margin-left: 0px;
         width: 100vw;
+        
+    }
+    .sectionItem-Painel{
+        width: 20vw;
+        padding: 1rem;
+        cursor: pointer;
+        background-color: var(--slate-50);
+        
+    }
+    .login{
+        width: 45vw;
     }
 
-    
 }
 
   
