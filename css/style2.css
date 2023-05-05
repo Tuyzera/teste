@@ -66,6 +66,7 @@ body{
     padding: 1rem;
     display: block;
     cursor: pointer;
+    transition: 0.5s ease;
     
 }
 .sectionItem-Painel{
@@ -159,7 +160,7 @@ body{
 }
 #div1 input{
     border: 1px solid black;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 form{
    padding-top: 30px;
@@ -244,20 +245,7 @@ form{
         gap: 25px;   
         border-bottom: 1px solid  rgb(17, 80, 134);
     }
-    .gallery{
-        display: flex;
-        flex-direction: column;
-        margin-left: 0px;
-        height: 80vh;
-        overflow: hidden;
-        width: 100vw;
-        justify-content: center;
-        padding-top: 1vh;
-        padding-left: 33vw;
-    }
-    .gallery-card img{
-        width: 100px;
-    }
+    
     .footer{
         width: 100vw;
         display: flex;

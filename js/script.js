@@ -1,14 +1,22 @@
 
-
-function layoutCustom(){
-    document.getElementById('div1').style.backgroundColor = 'red';
-    document.getElementById('div1').style.fontFamily = 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-function layoutNormal(){
-    document.getElementById('div1').style.background = 'rgb(241,246,251)';
-    document.getElementById('div1').style.fontFamily = 'Verdana', 'Geneva', Tahoma, sans-serif;
-}
+    function addFundo(option){
+        if (option == 'custom') {
+            document.querySelector('.cabecalho-conteudo').style.backgroundColor = 'red';
+            document.querySelector('.footer').style.backgroundColor = 'red'
+            document.querySelector('main').style.fontFamily = 'Arial'
+            document.querySelector('.nav-bar-esquerda').style.backgroundColor = 'red'
+            document.querySelector('.sectionItem-Painel').style.backgroundColor = 'red'
+            document.querySelector('#div1').style.backgroundColor = 'red'
+        } else {
+            document.querySelector('.cabecalho-conteudo').style.backgroundColor = 'rgb(17, 80, 134)';
+            document.querySelector('.footer').style.backgroundColor = 'rgb(17, 80, 134)'
+            document.querySelector('main').style.fontFamily = 'Nunito'
+            document.querySelector('.nav-bar-esquerda').style.backgroundColor = '#FFFFFF'
+            document.querySelector('.sectionItem-Painel').style.backgroundColor = '#F1F6FB'
+            document.querySelector('#div1').style.backgroundColor = '#F1F6FB'
+        }
+        
+    }
 
     function addItem(){
         const login = document.getElementsByClassName('login')
@@ -39,5 +47,17 @@ function layoutNormal(){
 
         
     }
+
+    function sair(){
+        console.log('oi');
+        localStorage.clear();
+        window.location.href = 'index.html';
+        document.getElementById('section-login').innerHTML = 'Login'
+        document.getElementById('imagem').style.display = 'none'
+        document.getElementById('imagemSair').style.display = 'none'
+
+    }
+
+
 
 

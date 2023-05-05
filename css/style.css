@@ -67,6 +67,7 @@ body{
     padding: 1rem;
     display: block;
     cursor: pointer;
+    transition: 0.5s ease;
     
 }
 .sectionItem-Painel{
@@ -84,6 +85,7 @@ body{
 .sectionItem:hover{
     background-color: var(--slate-50);
     letter-spacing: 0.05rem;
+    transition: ease-in-out;
 }
 
 .sectionTitle{
@@ -152,7 +154,7 @@ main{
 
 .gallery {
     color: #84909B;
-    padding: 9.375rem   6.25rem 6rem 6.25rem;
+    padding: 7.6vw;
     text-align: center;
     overflow: auto;
     gap: 0.625rem;

@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/c7ea27d389.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <script src="js/usuario.js" async></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.js" async></script>
 </head>
 <body>
     <header class="cabecalho" id="cabecalho">
@@ -56,9 +56,10 @@
         <div class="sectionItem">
 
             <div class="sectionTitle">
-                <i class="fa-solid fa-user fa-shake fa-lg" style="color: black;" id="imagem"></i>
+                <i class="fa-solid fa-user fa-lg" style="color: black;" id="imagemPreta"></i>
+                <i class="fa-sharp fa-solid fa-door-open fa-lg" style="color: #000000;" id="imagemSair"></i>
                 <a href="index3.html">
-                    <p class="asideTitle">Login</p>
+                    <p class="asideTitle" id="section-login" onclick="sair()">Login</p>
                 </a>
                 
             </div>
@@ -79,9 +80,9 @@
                 <input type="tel" name="" id="">
                 <p>
                     <label for="Normal">Normal</label>
-                    <input type="radio" name="curso" id="Normal" value="Normal" onclick="layoutNormal()"> 
+                    <input type="radio" name="curso" id="Normal" value="Normal" onclick="addFundo('normal')"> 
                     <label for="Custom">Custom</label>
-                    <input type="radio" name="curso" id="Custom" value="Custom" onclick="layoutCustom()"> 
+                    <input type="radio" name="curso" id="custom" value="Custom" onclick="addFundo('custom')"> 
                 </p>        
             </form>
         </div>
@@ -92,6 +93,5 @@
         <p>Kevin Schops Cavalheiro</p>
         <p>Matheus Voltolini Seidel</p>
 </footer>
-<script src="js/script.js"></script>
 </body>
 </html>

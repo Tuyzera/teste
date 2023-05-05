@@ -1,12 +1,14 @@
-
 const usuarios = document.getElementById('usuario')
-console.log(usuarios)
 
 const json = JSON.parse(localStorage.getItem('json'));
-console.log(json.nome)
 
 if (json != null) {
+    document.getElementById('imagemPreta').style.display = 'none'
+    document.getElementById('section-login').innerHTML = 'Sair'
     usuarios.innerHTML = json.nome;
+
 } else {
+    document.getElementById('imagem').style.display = 'none'
+    document.getElementById('imagemSair').style.display = 'none'
     usuarios.innerHTML = 'Usuário não autenticado';
 }
