@@ -214,7 +214,7 @@ form{
   main{
     width: 80vw;
     margin-left: 20vw;
-    height: 100vh;
+    height: 150vh;
     background-color: rgb(241,246,251);
   }
 @media (max-width: 1200px){
